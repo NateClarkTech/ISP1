@@ -1,16 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="discription" content="ISP week 1 webpage"/>
     <meta name="author" content="Nathaniel Clark"/>
     <meta name="content" content="Benny Bada Bing"/>
-    <title>Test</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./stylesheet.css" rel="stylesheet"/>
+    <title>Bada Bing</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
+  <!--Navbar start-->
+  <!--Code from https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_navbar&stacked-->
+  <nav class="navbar navbar-expand-sm bg-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/badabing.svg" alt="Bootstrap" width="250">
+      </a>
+      <ul class="navbar-nav">
+        <li class="navitem">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="navitem">
+          <a class="nav-link" href="./menu.html">Menu</a>
+        </li>
+        <li class="navitem">
+          <a class="nav-link" href="./order.html">Order</a>
+        </li>
+        <li class="navitem">
+          <a class="nav-link" href="./contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Navbar end-->
+
+  <!--Page Contents Start-->
   <div>
-      <img src="./assets/badabing.svg" alt="Bada Bing Logo"/>
+
+
+
   </div>
+  <!--Page Contents End-->
+
+  <!--Footer-->
+  <footer class="text-lg-start bg-body-tertiary text-muted mt-auto container-fluid">
+  <div class="row">
+  <!--Address Start-->
+  <div class="col">
+    <p class="footer_text ">Our Locations:</p>
+    <a href="https://www.google.com/maps/place/Benny+Bada+Bings+Pizza/@27.0665056,-82.4215047,17z/data=!3m1!4b1!4m6!3m5!1s0x88c35a2649cd2b89:0xbe4938a2a39bfba9!8m2!3d27.0665008!4d-82.4189298!16s%2Fg%2F1tcwgsjd?entry=ttu" 
+    style="text-decoration: none;">
+      <address>
+      1815 Tamiami Trl S,<br>
+      Venice, FL, <br>
+      United States, Florida<br>
+      (941) 445-5963<br>
+      </address>
+    </a>
+  </div>
+  <!--Address End-->
+
+  <!--Brand name-->
+  <a class="col" href="./index.html">
+    <img src="./assets/badabing.svg" alt="Bootstrap" width="250" class="pt-sm-4">
+  </a>
+
+  <!--Social Media Start-->
+  <div class="d-flex col col-auto">
+    <div class="text-nowrap">
+      <p class="footer_text px-2">Follow us on Facebook:</p>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/people/Benny-Bada-Bing/100057357345055/">
+        <img src="assets/fb_logo.png" width="20px" height="20px">
+    </a>
+    </div>
+  </div>
+  <!--Social Media End-->
+  </div>
+  </footer>
 </body>
 </html>
