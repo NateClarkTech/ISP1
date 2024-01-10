@@ -11,7 +11,7 @@
     <script src="./scripts/order.js"></script>
     <title>Bada Bing Menu</title>
 </head>
-<body class="d-flex flex-column min-vh-100 bg-success">
+<body class="d-flex flex-column min-vh-100 background">
   <!--Navbar start-->
   <!--Code from https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_navbar&stacked-->
   <nav class="navbar navbar-expand-sm bg-light ">
@@ -83,27 +83,27 @@
             <fieldset>
                 <legend class="text-center">Chicken Wings</legend>
                 
-                <label>
+                <label class="mx-1">
                     Hot
                     <input type="radio" id="hot" name="flavor">
                 </label>
     
-                <label>
+                <label class="mx-1">
                     Mild
                     <input type="radio" id="mild" name="flavor">
                 </label>
     
-                <label>
+                <label class="mx-1">
                     Garlic
                     <input type="radio" id="garlic" name="flavor">
                 </label>
     
-                <label>
+                <label class="mx-1">
                     Honey BBQ
                     <input type="radio" id="honey_bbq" name="flavor">
                 </label>
     
-                <label>
+                <label class="mx-1">
                     Teriyaki
                     <input type="radio" id="teriyaki" name="flavor">
                 </label>
@@ -152,58 +152,230 @@
               </fieldset>
           </form>
         <form id="toppings" >
-          <legend class="text-center">Toppings</legend>
-          <p class="text-center">Price per topping: Sheet - $2.00, Whole Pizza - $1.75, Slice - $0.50</p>
-          <div class="mx-auto">
-            <input type="checkbox" id="extra_cheese" name="topping" value="extra_cheese">
-            <label for="extra_cheese">Extra Cheese</label>
-            <input type="checkbox" id="meatballs" name="topping" value="meatballs">
-            <label for="meatballs">Meatballs</label>
-            <input type="checkbox" id="tomatoes" name="topping" value="tomatoes">
-            <label for="tomatoes">Tomatoes</label>
-            <input type="checkbox" id="sausage" name="topping" value="sausage">
-            <label for="sausage">Sausage</label>
-            <input type="checkbox" id="hot_cherry_peppers" name="topping" value="hot_cherry_peppers">
-            <label for=""hot_cherry_peppers>Hot Cherry Peppers</label>
-            <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
-            <label for="mushrooms">Mushrooms</label>
-            <input type="checkbox" id="artichokes" name="topping" value="artichokes">
-            <label for="artichokes">Artichokes</label>
-            <input type="checkbox" id="onions" name="topping" value="onions">
-            <label for="onions">Onions</label>
-            <input type="checkbox" id="black_olives" name="topping" value="black_olives">
-            <label for="black_olives">Black Olives</label>
-            <input type="checkbox" id="green_peppers" name="topping" value="green_peppers">
-            <label for="green_peppers">Green Peppers</label>
-            <input type="checkbox" id="ricotta_cheese" name="topping" value="ricotta_cheese">
-            <label for="ricotta_cheese">Ricotta Cheese</label>
-            <input type="checkbox" id="salami" name="topping" value="salami">
-            <label for="salami">Salami</label>
-            <input type="checkbox" id="ham" name="topping" value="ham">
-            <label for="ham">Ham</label>
-            <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
-            <label for="pepperoni">Pepperoni</label>
-            <input type="checkbox" id="chicken" name="topping" value="chicken">
-            <label for="chicken">Chicken</label>
-            <input type="checkbox" id="bacon" name="topping" value="bacon">
-            <label for="bacon">Bacon</label>
-            <input type="checkbox" id="peppercini" name="topping" value="peppercini">
-            <label for="peppercini">Peppercini</label>
-            <input type="checkbox" id="pineapple" name="topping" value="pineapple">
-            <label for="pineapple">Pineapple</label>
-            <input type="checkbox" id="anchovies" name="topping" value="anchovies">
-            <label for="anchovies">Anchovies</label>
-            <input type="checkbox" id="spinach" name="topping" value="spinach">
-            <label for="spinach">Spinach</label>
-            <input type="checkbox" id="roasted_red_peppers" name="topping" value="roasted_red_peppers">
-            <label for="roasted_red_peppers">Roasted Red Peppers</label>
+          <fieldset>
+            <legend class="text-center">Toppings</legend>
+            <p class="text-center">Price per topping: Sheet - $2.00, Whole Pizza - $1.75, Slice - $0.50</p>
+            
+            <div class="mx-auto">
+                <label>
+                    <input type="checkbox" id="extra_cheese" name="topping" value="extra_cheese">
+                    Extra Cheese
+                </label>
+    
+                <label>
+                    <input type="checkbox" id="meatballs" name="topping" value="meatballs">
+                    Meatballs
+                </label>
+    
+                <label>
+                    <input type="checkbox" id="tomatoes" name="topping" value="tomatoes">
+                    Tomatoes
+                </label>
+                            
+                <label>
+                  <input type="checkbox" id="sausage" name="topping" value="sausage">
+                  Sausage
+                </label>
+
+                <label>
+                  <input type="checkbox" id="hot_cherry_peppers" name="topping" value="hot_cherry_peppers">
+                  Hot Cherry Peppers
+                </label>
+
+                <label>
+                  <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+                  Mushrooms
+                </label>
+
+                <label>
+                  <input type="checkbox" id="artichokes" name="topping" value="artichokes">
+                  Artichokes
+                </label>
+
+                <label>
+                  <input type="checkbox" id="onions" name="topping" value="onions">
+                  Onions
+                </label>
+
+                <label>
+                  <input type="checkbox" id="black_olives" name="topping" value="black_olives">
+                  Black Olives
+                </label>
+
+                <label>
+                  <input type="checkbox" id="green_peppers" name="topping" value="green_peppers">
+                  Green Peppers
+                </label>
+
+                <label>
+                  <input type="checkbox" id="ricotta_cheese" name="topping" value="ricotta_cheese">
+                  Ricotta Cheese
+                </label>
+
+                <label>
+                  <input type="checkbox" id="salami" name="topping" value="salami">
+                  Salami
+                </label>
+
+                <label>
+                  <input type="checkbox" id="ham" name="topping" value="ham">
+                  Ham
+                </label>
+
+                <label>
+                  <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+                  Pepperoni
+                </label>
+
+                <label>
+                  <input type="checkbox" id="chicken" name="topping" value="chicken">
+                  Chicken
+                </label>
+
+                <label>
+                  <input type="checkbox" id="bacon" name="topping" value="bacon">
+                  Bacon
+                </label>
+
+                <label>
+                  <input type="checkbox" id="peppercini" name="topping" value="peppercini">
+                  Peppercini
+                </label>
+
+                <label>
+                  <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+                  Pineapple
+                </label>
+
+                <label>
+                  <input type="checkbox" id="anchovies" name="topping" value="anchovies">
+                  Anchovies
+                </label>
+
+                <label>
+                  <input type="checkbox" id="spinach" name="topping" value="spinach">
+                  Spinach
+                </label>
+
+                <label>
+                  <input type="checkbox" id="roasted_red_peppers" name="topping" value="roasted_red_peppers">
+                  Roasted Red Peppers
+                </label>
           </div>
         </form>
       </div>
     </div>
+    <button onclick="orderPizza('pizza_size', 'toppings')">Add pizza to order</button>
     </div>
+    <div class="col-4 d-flex flex-column text-center">
+      <h5 class="text-center">Specialty Pizza</h5>
+      <div class="mx-auto">
+        <form id="white_pizza">
+          <p class="my-0">White pizza</p>
+          <label>Medium - $13.99 <input type="radio" id="white_medium" name="white_pizza_size" value="white_medium"/></label>
+          <label>Large - $15.99 <input type="radio" id="white_large" name="white_pizza_size" value="white_large"/></label>
+        </form>
+        <button onclick="clearRadioForm('white_pizza')"\>Add to order</button>
+        <p>Margarita Pizza</p>
+        <form id="margarita_pizza">
+          <p class="my-0">White pizza</p>
+          <label>Medium - $13.99 <input type="radio" id="margarita_medium" name="margarita_pizza" value="margarita_medium"/></label>
+          <label>Large - $15.99 <input type="radio" id="margarita_large" name="margarita_pizza" value="margarita_large"/></label>
+        </form>
+        <button onclick="clearRadioForm('margarita_pizza')"\>Add to order</button>
+      </div>
+    </div>
+
+    <div class="col-4 d-flex flex-column">
+      <h5 class="text-center">Special Pizza Bundles</h5>
+      <div class="mx-auto">
+        <p>Party Pack Special - $24.99 <button type="button">add to order</button></p>
+        <p class="text-center">Large pizza, dozen wings, 2 liter of soda</p>
+        <p>Family Pack Special - $48.99 <button type="button">add to order</button></p>
+        <p class="text-center">2 Large pizza, 2 dozen wings, 2-2 liter of soda</p>
+        <p>Bada Bing Pack Special - $52.99 <button type="button">add to order</button></p>
+        <p class="text-center">Sheet pizza, 3 dozen wings, dozen garlic knots 2-2 liter of soda</p>
+      </div>
+    </div>
+
+    <div class="col-4 d-flex flex-column">
+      <h5 class="text-center">Stuffed Breads</h5>
+      <div class="mx-auto">
+        <p>Stramboli - $12.99 <button type="button">add to order</button></p>
+        <p>Calzone - $11.99 <button type="button">add to order</button></p>
+      </div>
+    </div>
+    <div class="col-4 d-flex flex-column">
+      <h5 class="text-center">Appetizers</h5>
+      <div class="mx-auto">
+        <p>Garlic Knots - 6 for $3.00, 12 for $4.99 <button type="button">add to order</button></p>
+        <p>Rice Ball - $4.99 <button type="button">add to order</button></p>
+        <p>Rich Ball Parmagiano - $6.99 <button type="button">add to order</button></p>
+        <p>Broccoli Rabe - $9.99 <button type="button">add to order</button></p>
+        <p>Grilled Pizza - $10.99 <button type="button">add to order</button></p>
+        <p>Mussels Fra Divlo - $12.99 <button type="button">add to order</button></p>
+        <p>Shrimp Scampi - $11.99 <button type="button">add to order</button></p>
+        <p>Fried Calamari - single $10.99, double $18.00 <button type="button">add to order</button></p>
+      </div>
+    </div>
+
+    <div class="col-4 d-flex flex-column">
+      <h5 class="text-center">Soup</h5>
+      <div class="mx-auto">
+        <p>Cup - $2.50 <button type="button">add to order</button></p>
+        <p>Bowl - $5.00 <button type="button">add to order</button></p>
+        <p>Pint - $6.00 <button type="button">add to order</button></p>
+        <p>Quart - $10.00 <button type="button">add to order</button></p>
+      </div>
+    </div>
+
+    <div class="col-4 d-flex flex-column">
+      <h5 class="text-center">Salads</h5>
+      <div class="mx-auto">
+        <p>Garden Salad - $5.99 <button type="button">add to order</button></p>
+        <p>Caesar Salad - $5.99 <button type="button">add to order</button></p>
+        <p>Caesar Salad w/ chicken - $10.99 <button type="button">add to order</button></p>
+        <p>Caesar Salad w/ shrimp - $13.99 <button type="button">add to order</button></p>
+        <p>Caprese Salad- $11.99 <button type="button">add to order</button></p>
+        <p>Antipasto Salad -  small $11.99, large $15.99<button type="button">add to order</button></p>
+      </div>
+    </div>
+
+    <div class="col-4 d-flex flex-column">
+      <h5 class="text-center">Pasta</h5>
+      <div class="mx-auto">
+        <p>House Sauce - $11.99 <button type="button">add to order</button></p>
+        <p>Spaghetti & Meatballs - $15.99 <button type="button">add to order</button></p>
+        <p>Pasta Angelo - $13.99 <button type="button">add to order</button></p>
+        <p>Meat Sauce - $14.99 <button type="button">add to order</button></p>
+        <p>Garlic & Oil - $12.99 <button type="button">add to order</button></p>
+        <p>Broccoli Rabe -  $16.99<button type="button">add to order</button></p>
+        <form><label> Add prosciutto & peas <input type="checkbox"> $4.00</label></form>
+        <p>Alfredo -  $15.99<button type="button">add to order</button></p>
+        <p>Ala Vodka -  $15.99<button type="button">add to order</button></p>
+        <p>Linguine Carbonara -  $11.99, large $16.99<button type="button">add to order</button></p>
+        <p>Penne della Nona -  $11.99, large $16.99<button type="button">add to order</button></p>
+      </div>
+    </div>
+
+    <div class="col-4 d-flex flex-column">
+      <h5 class="text-center">House Specialties</h5>
+      <div class="mx-auto">
+        <p>Lasagna - $15.99 <button type="button">add to order</button></p>
+        <p>Baked Ziti - $15.99 <button type="button">add to order</button></p>
+        <p>Ravioli - $11.99 <button type="button">add to order</button></p>
+        <p>Eggplant Parmesam - $14.99 <button type="button">add to order</button></p>
+      </div>
     </div>
   </div>
+
+  <!--ADD A ORDER TAB THAT HAS THE CURRENT ORDER AND PRICE-->
+
+
+  </div>
+
+    
+
   <!--Page Contents End-->
 
   <!--Footer Start-->
