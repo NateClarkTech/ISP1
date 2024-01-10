@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="discription" content="ISP week 1 webpage - Bada Bing order"/>
+    <meta name="author" content="Nathaniel Clark"/>
+    <meta name="content" content="Benny Bada Bing order"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./stylesheet.css" rel="stylesheet"/>
+    <script src="./scripts/order.js"></script>
+    <title>Bada Bing Menu</title>
+</head>
+<body class="d-flex flex-column min-vh-100 bg-success">
+  <!--Navbar start-->
+  <!--Code from https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_navbar&stacked-->
+  <nav class="navbar navbar-expand-sm bg-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/badabing.svg" alt="Bootstrap" width="250">
+      </a>
+      <ul class="navbar-nav">
+        <li class="navitem">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="navitem">
+          <a class="nav-link" href="./menu.html">Menu</a>
+        </li>
+        <li class="navitem">
+          <a class="nav-link" href="./order.html">Order</a>
+        </li>
+        <li class="navitem">
+          <a class="nav-link" href="./contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--Navbar end-->
+
+  <!--Page Contents Start-->
+  <div class="container-lg bg-light border border-success text-end px-5">
+    <div class="row">
+      <div class="col-4 d-flex flex-column">
+        <h5 class="text-center">Chicken</h5>
+        <div class="mx-auto">
+          <p>Chicken Parmesan - $15.99 <button type="button">add to order</button></p>
+          <p>Chicken Francese - $16.99 <button type="button">add to order</button></p>
+          <p>Chicken Marsala - $16.99 <button type="button">add to order</button></p>
+          <p>Chicken Cattiatore - $16.99 <button type="button">add to order</button></p>
+          <p>Chicken Scarpriello - $16.99 <button type="button">add to order</button></p>
+          <p>Chicken Picata - $16.99 <button type="button">add to order</button></p>
+          <p>Veal Chop - $25.99 <button type="button">add to order</button></p>
+        </div>
+      </div>
+      <div class="col-4 px-2 d-flex flex-column">
+        <h5 class="text-center">Seafood</h5>
+        <div class="mx-auto">
+          <p>Capellini Delight - $17.99 <button type="button">add to order</button></p>
+          <p>Linguini with Clam Sauce - $15.99 <button type="button">add to order</button></p>
+          <p>Shrimp Scampi - $16.99 <button type="button">add to order</button></p>
+          <p>Mussels Fra Diavlo - $15.99 <button type="button">add to order</button></p>
+          <p>Broiled Swai - $16.99 <button type="button">add to order</button></p>
+          <p>Zuppa da Pesce - $19.99 <button type="button">add to order</button></p>
+        </div>
+      </div>
+      <div class="col-4 px-2 d-flex flex-column">
+        <h5 class="text-center">12" Subs</h5>
+        <div class="mx-auto">
+          <p>Eggplant Parmesan - $10.99 <button type="button">add to order</button></p>
+          <p>Chicken Parmesan - $10.99 <button type="button">add to order</button></p>
+          <p>Steak & Cheese - $10.99 <button type="button">add to order</button></p>
+          <p>Caprese - $10.99 <button type="button">add to order</button></p>
+          <p>Meatball Parmesan - $10.99 <button type="button">add to order</button></p>
+          <p>Italian Combo - $10.99 <button type="button">add to order</button></p>
+          <p>Ham with Cheese - $10.99 <button type="button">add to order</button></p>
+          <p>Salami with Cheese - $10.99 <button type="button">add to order</button></p>
+          <p>Sausage Peppers & Onions - $10.99 <button type="button">add to order</button></p>
+          <p>Veal Parmesan Sub - $11.99 <button type="button">add to order</button></p>
+        </div>
+      </div>
+      <div class="col-4 px-2 d-flex flex-column ">
+        <form id="sauce_flavor" class="text-center">
+            <fieldset>
+                <legend class="text-center">Chicken Wings</legend>
+                
+                <label>
+                    Hot
+                    <input type="radio" id="hot" name="flavor">
+                </label>
+    
+                <label>
+                    Mild
+                    <input type="radio" id="mild" name="flavor">
+                </label>
+    
+                <label>
+                    Garlic
+                    <input type="radio" id="garlic" name="flavor">
+                </label>
+    
+                <label>
+                    Honey BBQ
+                    <input type="radio" id="honey_bbq" name="flavor">
+                </label>
+    
+                <label>
+                    Teriyaki
+                    <input type="radio" id="teriyaki" name="flavor">
+                </label>
+            </fieldset>
+        </form>
+      <div class="mx-auto">
+        <p>10 Wings - $9.99 <button onclick="clearRadioForm('sauce_flavor')">Add to Order</button></p>
+        <p>20 Wings - $17.99 <button onclick="clearRadioForm('sauce_flavor')">Add to Order</button></p>
+        <p>30 Wings - $25.99 <button onclick="clearRadioForm('sauce_flavor')">Add to Order</button></p>
+        <p>40 Wings - $31.99 <button onclick="clearRadioForm('sauce_flavor')">Add to Order</button></p>
+      </div>
+    </div>
+
+      <div class="col-4 text-center">
+        <h5>Pizza</h5>
+        <div class="d-flex flex-column">
+          <div class="mx-auto">
+            <form id="pizza_size">
+              <fieldset>
+                  <legend>Pizza Size</legend>
+          
+                  <label>
+                      <input type="radio" id="slice" name="size" value="slice">
+                      Slice - $2.25
+                  </label>
+          
+                  <label>
+                      <input type="radio" id="medium" name="size" value="medium">
+                      Medium (16") - $11.99
+                  </label>
+          
+                  <label>
+                      <input type="radio" id="large" name="size" value="large">
+                      Large (18") - $13.99
+                  </label>
+          
+                  <label>
+                      <input type="radio" id="sicilian" name="size" value="sicilian">
+                      Sicilian (Square) - $15.99
+                  </label>
+          
+                  <label>
+                      <input type="radio" id="sheet" name="size" value="sheet">
+                      Sheet (24 Slices) - $22.99
+                  </label>
+              </fieldset>
+          </form>
+        <form id="toppings" >
+          <legend class="text-center">Toppings</legend>
+          <p class="text-center">Price per topping: Sheet - $2.00, Whole Pizza - $1.75, Slice - $0.50</p>
+          <div class="mx-auto">
+            <input type="checkbox" id="extra_cheese" name="topping" value="extra_cheese">
+            <label for="extra_cheese">Extra Cheese</label>
+            <input type="checkbox" id="meatballs" name="topping" value="meatballs">
+            <label for="meatballs">Meatballs</label>
+            <input type="checkbox" id="tomatoes" name="topping" value="tomatoes">
+            <label for="tomatoes">Tomatoes</label>
+            <input type="checkbox" id="sausage" name="topping" value="sausage">
+            <label for="sausage">Sausage</label>
+            <input type="checkbox" id="hot_cherry_peppers" name="topping" value="hot_cherry_peppers">
+            <label for=""hot_cherry_peppers>Hot Cherry Peppers</label>
+            <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+            <label for="mushrooms">Mushrooms</label>
+            <input type="checkbox" id="artichokes" name="topping" value="artichokes">
+            <label for="artichokes">Artichokes</label>
+            <input type="checkbox" id="onions" name="topping" value="onions">
+            <label for="onions">Onions</label>
+            <input type="checkbox" id="black_olives" name="topping" value="black_olives">
+            <label for="black_olives">Black Olives</label>
+            <input type="checkbox" id="green_peppers" name="topping" value="green_peppers">
+            <label for="green_peppers">Green Peppers</label>
+            <input type="checkbox" id="ricotta_cheese" name="topping" value="ricotta_cheese">
+            <label for="ricotta_cheese">Ricotta Cheese</label>
+            <input type="checkbox" id="salami" name="topping" value="salami">
+            <label for="salami">Salami</label>
+            <input type="checkbox" id="ham" name="topping" value="ham">
+            <label for="ham">Ham</label>
+            <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="chicken" name="topping" value="chicken">
+            <label for="chicken">Chicken</label>
+            <input type="checkbox" id="bacon" name="topping" value="bacon">
+            <label for="bacon">Bacon</label>
+            <input type="checkbox" id="peppercini" name="topping" value="peppercini">
+            <label for="peppercini">Peppercini</label>
+            <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+            <label for="pineapple">Pineapple</label>
+            <input type="checkbox" id="anchovies" name="topping" value="anchovies">
+            <label for="anchovies">Anchovies</label>
+            <input type="checkbox" id="spinach" name="topping" value="spinach">
+            <label for="spinach">Spinach</label>
+            <input type="checkbox" id="roasted_red_peppers" name="topping" value="roasted_red_peppers">
+            <label for="roasted_red_peppers">Roasted Red Peppers</label>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  <!--Page Contents End-->
+
+  <!--Footer Start-->
+  <footer class="text-lg-start bg-body-tertiary text-muted mt-auto container-fluid">
+    <div class="row">
+    <!--Address Start-->
+    <div class="col">
+      <p class="footer_text ">Our Locations:</p>
+      <a href="https://www.google.com/maps/place/Benny+Bada+Bings+Pizza/@27.0665056,-82.4215047,17z/data=!3m1!4b1!4m6!3m5!1s0x88c35a2649cd2b89:0xbe4938a2a39bfba9!8m2!3d27.0665008!4d-82.4189298!16s%2Fg%2F1tcwgsjd?entry=ttu" 
+      style="text-decoration: none;">
+        <address>
+        1815 Tamiami Trl S,<br>
+        Venice, FL, <br>
+        United States, Florida<br>
+        (941) 445-5963<br>
+        </address>
+      </a>
+    </div>
+    <!--Address End-->
+  
+    <!--Brand name-->
+    <a class="col" href="./index.html">
+      <img src="./assets/badabing.svg" alt="Bootstrap" width="250" class="pt-sm-4">
+    </a>
+  
+    <!--Social Media Start-->
+    <div class="d-flex col col-auto">
+      <div class="text-nowrap">
+        <p class="footer_text px-2">Follow us on Facebook:</p>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/people/Benny-Bada-Bing/100057357345055/">
+          <img src="assets/fb_logo.png" width="20px" height="20px">
+      </a>
+      </div>
+    </div>
+    <!--Social Media End-->
+    </div>
+  </footer>
+  <!--Footer End-->
+</body>
+</html>

@@ -1,3 +1,10 @@
 .footer_text{
     margin-bottom: 5px
 }
+
+.background{
+  background-image: url('assets/newyorkstylepizza.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
