@@ -117,6 +117,17 @@ function orderSpecialtyPizza(radioName, priceOfProduct){
     console.log("ERROR")
 }
 
+function addBroccoliRabeToOrder(productName, productPrice, checkboxName, extraPrice){
+    var checkboxElement = document.getElementsByName(checkboxName);
+    console.log(checkboxElement[0]);
+    if (checkboxElement[0].checked){
+        addToTotal(productName + checkboxElement[0].value, productPrice + extraPrice);
+        return;
+    }
+    addToTotal(productName, productPrice);
+    return;
+}
+
 function updateOrder(id){
     var string = ""
     for (var i = 0; i < orderProducts.length; i++){

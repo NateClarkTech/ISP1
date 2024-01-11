@@ -338,7 +338,8 @@
         <p>Caesar Salad w/ chicken - $10.99 <button type="button" onclick="addToTotal('Caesar Salad w/ Chicken', 10.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
         <p>Caesar Salad w/ shrimp - $13.99 <button type="button" onclick="addToTotal('Caesar Salad w/ Shrimp', 13.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
         <p>Caprese Salad - $11.99 <button type="button" onclick="addToTotal('Caprese Salad', 11.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
-        <p>Antipasto Salad - small $11.99, large $15.99 <button type="button" onclick="addToTotal('Antipasto Salad (Small)', 11.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
+        <p>Antipasto Salad - small $11.99 <button type="button" onclick="addToTotal('Antipasto Salad (Small)', 11.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
+        <p>Antipasto Salad - large $15.99 <button type="button" onclick="addToTotal('Antipasto Salad (Large)', 15.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
       </div>
     </div>
 
@@ -350,13 +351,12 @@
         <p>Pasta Angelo - $13.99 <button type="button" onclick="addToTotal('Pasta Angelo', 13.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
         <p>Meat Sauce - $14.99 <button type="button" onclick="addToTotal('Meat Sauce', 14.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
         <p>Garlic & Oil - $12.99 <button type="button" onclick="addToTotal('Garlic & Oil', 12.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
-        <!--Fix Broccoli Rabe to have properly account for if prosciutoo and peas were added.-->
-        <p class="mb-0">Broccoli Rabe -  $16.99<button type="button" onclick="addToTotal('Broccoli Rabe', 16.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
-        <form class="mb-2"><label> Add prosciutto & peas <input type="checkbox"> $4.00</label></form>
+        <p class="mb-0">Broccoli Rabe -  $16.99<button type="button" onclick="addBroccoliRabeToOrder('Broccoli Rabe', 16.99, 'addPeasAndProsciutto', 4.00); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
+        <form class="mb-2"><label> Add prosciutto & peas <input type="checkbox" name="addPeasAndProsciutto" value="w/ added Peas and Prosciutto"> $4.00</label></form>
         <p>Alfredo -  $15.99<button type="button" onclick="addToTotal('Alfredo', 15.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
         <p>Ala Vodka -  $15.99<button type="button" onclick="addToTotal('Ala Vodka', 15.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
-        <p>Linguine Carbonara -  $11.99, large $16.99<button type="button" onclick="addToTotal('Linguine Carbonara', 11.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
-        <p>Penne della Nona -  $11.99, large $16.99<button type="button" onclick="addToTotal('Penne della Nona', 16.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
+        <p>Linguine Carbonara - $16.99<button type="button" onclick="addToTotal('Linguine Carbonara', 16.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
+        <p>Penne della Nona - $16.99<button type="button" onclick="addToTotal('Penne della Nona', 16.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
       </div>
     </div>
 
