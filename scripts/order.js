@@ -105,7 +105,6 @@ function orderSpecialtyPizza(radioName, priceOfProduct){
             selectedRadioElement = elements[i];
         }
     }
-    console.log(selectedRadioElement)
     if (selectedRadioElement.id === 'white_medium' || selectedRadioElement.id === 'margarita_medium'){
         addToTotal(selectedRadioElement.value + " Pizza", 13.99);
         return;
@@ -119,7 +118,6 @@ function orderSpecialtyPizza(radioName, priceOfProduct){
 
 function addBroccoliRabeToOrder(productName, productPrice, checkboxName, extraPrice){
     var checkboxElement = document.getElementsByName(checkboxName);
-    console.log(checkboxElement[0]);
     if (checkboxElement[0].checked){
         addToTotal(productName + checkboxElement[0].value, productPrice + extraPrice);
         return;
@@ -129,6 +127,7 @@ function addBroccoliRabeToOrder(productName, productPrice, checkboxName, extraPr
 }
 
 function updateOrder(id){
+
     var string = ""
     for (var i = 0; i < orderProducts.length; i++){
         if (i > 0){
@@ -148,7 +147,7 @@ function updatePrice(id){
 }
 
 function getSelectedRadioElement(id){
-    var elements = document.getElementsByName('flavor')
+    var elements = document.getElementsByName('flavor');
     for (var i = 0; i < elements.length; i++){
         if (elements[i].checked){
             return elements[i].value;
@@ -157,7 +156,7 @@ function getSelectedRadioElement(id){
 }
 
 function addWingsToOrder(number, formName, price){
-    var selectedFlavor = getSelectedRadioElement(formName)
+    var selectedFlavor = getSelectedRadioElement(formName);
     if (selectedFlavor){
         addToTotal(number + " " + selectedFlavor  + ' Wings', price)
     }
@@ -169,4 +168,24 @@ function addToTotal(productName, priceOfProduct){
     prices.push(priceOfProduct);
     orderTotal = orderTotal + priceOfProduct;
     return orderTotal;
+}
+
+function completeOrder(){
+    if (orderTotal > 0){
+        alert("Order complete for a total of: $" + orderTotal.toFixed(2) + "\nYour order number is: #" + createOrderNumber());
+        orderTotal = 0;
+        for (var i = prices.length - 1; i >= 0; i--) {
+            prices.pop();
+        }
+        for (var i = orderProducts.length - 1; i >= 0; i--) {
+            orderProducts.pop();
+        }
+    }
+    else{
+        alert("Please add food to order");
+    }
+}
+
+function createOrderNumber(){
+    return Math.floor(Math.random() * 1000);
 }

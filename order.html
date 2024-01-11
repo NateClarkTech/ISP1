@@ -352,7 +352,7 @@
         <p>Meat Sauce - $14.99 <button type="button" onclick="addToTotal('Meat Sauce', 14.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
         <p>Garlic & Oil - $12.99 <button type="button" onclick="addToTotal('Garlic & Oil', 12.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
         <p class="mb-0">Broccoli Rabe -  $16.99<button type="button" onclick="addBroccoliRabeToOrder('Broccoli Rabe', 16.99, 'addPeasAndProsciutto', 4.00); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
-        <form class="mb-2"><label> Add prosciutto & peas <input type="checkbox" name="addPeasAndProsciutto" value="w/ added Peas and Prosciutto"> $4.00</label></form>
+        <form class="mb-2"><label> Add prosciutto & peas <input type="checkbox" name="addPeasAndProsciutto" value=" w/ added Peas and Prosciutto"> $4.00</label></form>
         <p>Alfredo -  $15.99<button type="button" onclick="addToTotal('Alfredo', 15.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
         <p>Ala Vodka -  $15.99<button type="button" onclick="addToTotal('Ala Vodka', 15.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
         <p>Linguine Carbonara - $16.99<button type="button" onclick="addToTotal('Linguine Carbonara', 16.99); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add to Order</button></p>
@@ -378,6 +378,9 @@
         <p id="orderDisplay"></p>
         <h5>Price:</h5>
         <p id="priceDisplay"></p>
+        <script>updatePrice(priceDisplay)</script>
+        <br>
+        <button type="button" onclick="completeOrder(); updateOrder(orderDisplay); updatePrice(priceDisplay);">Complete Order</button>
       </div>
     </div>
   </div>
