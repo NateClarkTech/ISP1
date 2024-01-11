@@ -10,12 +10,12 @@ function clearRadioForm(id) {
 function orderPizza(radioName, checkboxName) {
     var sizes = document.getElementsByName(radioName)
     var toppings = document.getElementsByName(checkboxName)
-
     var selectedSize;
     var selectedToppings = [];
     var string = ''
     var numToppings;
 
+    //get selected size
     for (var i = 0; i < sizes.length; i++){
         if (sizes[i].checked){
             selectedSize = sizes[i].value;
@@ -24,12 +24,14 @@ function orderPizza(radioName, checkboxName) {
         }    
     }
 
+    //if no size is selected alert user
     if (!selectedSize){
         console.log("No Size Selected")
         alert("Please select a size for the pizza.")
         return;
     }
 
+    //get every selected topping and uncheck the box
     for (var i = 0; i < toppings.length; i++){
         if (toppings[i].checked){
             selectedToppings.push(toppings[i].value);
@@ -37,6 +39,7 @@ function orderPizza(radioName, checkboxName) {
         }
     }
 
+    //string builder for slice
     if (selectedSize === 'Slice'){
         string = selectedSize + " of Pizza";
         if (toppings.length !== 0){
@@ -49,6 +52,7 @@ function orderPizza(radioName, checkboxName) {
             string = string + " " + selectedToppings[selectedToppings.length-1]
         }
     }
+    //string builder for other sizes
     else{
         string = selectedSize + " Pizza";
         if (toppings.length !== 0){
@@ -62,6 +66,7 @@ function orderPizza(radioName, checkboxName) {
         }
     }
 
+    //add correct price to order based on size and toppings
     switch (selectedSize){
         case 'Slice':
             addToTotal(string, (2.25 + numToppings * 0.5))
@@ -89,6 +94,26 @@ function orderPizza(radioName, checkboxName) {
             console.log(selectedToppings);
             return;
     }
+}
+
+function orderSpecialtyPizza(radioName, priceOfProduct){
+    var elements = document.getElementsByName(radioName);
+    var selectedRadioElement;
+
+    for (var i = 0; i < elements.length; i++){
+        if (elements[i].checked){
+            selectedRadioElement = elements[i].checked;
+        }
+    }
+    if (selectedRadioElement.id === 'white_medium' || selectedRadioElement.id === 'margarita_medium'){
+        addToTotal(elements[i].value + " Pizza", 13.99);
+        return;
+    }
+    if (selectedRadioElement.id){
+        addToTotal(elements[i].value + " Pizza", 15.99);
+        return;
+    }
+    console.log("ERROR")
 }
 
 function updateOrder(id){
@@ -125,7 +150,6 @@ function addWingsToOrder(number, formName, price){
         addToTotal(number + " " + selectedFlavor  + ' Wings', price)
         updateOrder(orderDisplay);
         updatePrice(priceDisplay);
-        clearRadioForm('formName')
     }
 }
 
