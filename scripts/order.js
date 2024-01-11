@@ -46,7 +46,7 @@ function orderPizza(radioName, checkboxName) {
             for (var i = 1; i < selectedToppings.length - 1; i++){
                 string = string + ", " + selectedToppings[i];
             }
-            string = string + selectedToppings[selectedToppings.length-1]
+            string = string + " " + selectedToppings[selectedToppings.length-1]
         }
     }
     else{
@@ -58,7 +58,7 @@ function orderPizza(radioName, checkboxName) {
             for (var i = 1; i < selectedToppings.length - 1; i++){
                 string = string + ", " + selectedToppings[i];
             }
-            string = string + selectedToppings[selectedToppings.length-1]
+            string = string + " " + selectedToppings[selectedToppings.length-1]
         }
     }
 
