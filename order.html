@@ -43,39 +43,39 @@
       <div class="col-4 d-flex flex-column">
         <h5 class="text-center">Chicken</h5>
         <div class="mx-auto">
-          <p>Chicken Parmesan - $15.99 <button type="button">add to order</button></p>
-          <p>Chicken Francese - $16.99 <button type="button">add to order</button></p>
-          <p>Chicken Marsala - $16.99 <button type="button">add to order</button></p>
-          <p>Chicken Cattiatore - $16.99 <button type="button">add to order</button></p>
-          <p>Chicken Scarpriello - $16.99 <button type="button">add to order</button></p>
-          <p>Chicken Picata - $16.99 <button type="button">add to order</button></p>
-          <p>Veal Chop - $25.99 <button type="button">add to order</button></p>
+          <p>Chicken Parmesan - $15.99 <button type="button" onclick="addToTotal('Chicken Parmesan', 15.99); updateOrder(orderDisplay); updatePrice(priceDisplay)">add to order</button></p>
+          <p>Chicken Francese - $16.99 <button type="button" onclick="addToTotal('Chicken Francese', 16.99); updateOrder(orderDisplay); updatePrice(priceDisplay)">add to order</button></p>
+          <p>Chicken Marsala - $16.99 <button type="button" onclick="addToTotal('Chicken Marsala', 16.99); updateOrder(orderDisplay); updatePrice(priceDisplay)">add to order</button></p>
+          <p>Chicken Cattiatore - $16.99 <button type="button" onclick="addToTotal('Chicken Cattiatore', 16.99); updateOrder(orderDisplay); updatePrice(priceDisplay)">add to order</button></p>
+          <p>Chicken Scarpriello - $16.99 <button type="button" onclick="addToTotal('Chicken Scarpriello', 16.99); updateOrder(orderDisplay); updatePrice(priceDisplay)">add to order</button></p>
+          <p>Chicken Picata - $16.99 <button type="button" onclick="addToTotal('Chicken Picata', 16.99); updateOrder(orderDisplay); updatePrice(priceDisplay)">add to order</button></p>
+          <p>Veal Chop - $25.99 <button type="button" onclick="addToTotal('Veal Chop', 25.99); updateOrder(orderDisplay); updatePrice(priceDisplay)">add to order</button></p>
         </div>
       </div>
       <div class="col-4 px-2 d-flex flex-column">
         <h5 class="text-center">Seafood</h5>
         <div class="mx-auto">
-          <p>Capellini Delight - $17.99 <button type="button">add to order</button></p>
-          <p>Linguini with Clam Sauce - $15.99 <button type="button">add to order</button></p>
-          <p>Shrimp Scampi - $16.99 <button type="button">add to order</button></p>
-          <p>Mussels Fra Diavlo - $15.99 <button type="button">add to order</button></p>
-          <p>Broiled Swai - $16.99 <button type="button">add to order</button></p>
-          <p>Zuppa da Pesce - $19.99 <button type="button">add to order</button></p>
+          <p>Capellini Delight - $17.99 <button type="button" onclick="addToOrder('Capellini Delight', 17.99)">add to order</button></p>
+          <p>Linguini with Clam Sauce - $15.99 <button type="button" onclick="addToOrder('Linguini with Clam Sauce', 15.99)">add to order</button></p>
+          <p>Shrimp Scampi - $16.99 <button type="button" onclick="addToOrder('Shrimp Scampi', 16.99)">add to order</button></p>
+          <p>Mussels Fra Diavlo - $15.99 <button type="button" onclick="addToOrder('Mussels Fra Diavlo', 15.99)">add to order</button></p>
+          <p>Broiled Swai - $16.99 <button type="button" onclick="addToOrder('Broiled Swai', 16.99)">add to order</button></p>
+          <p>Zuppa da Pesce - $19.99 <button type="button" onclick="addToOrder('Zuppa da Pesce', 19.99)">add to order</button></p>
         </div>
       </div>
       <div class="col-4 px-2 d-flex flex-column">
         <h5 class="text-center">12" Subs</h5>
         <div class="mx-auto">
-          <p>Eggplant Parmesan - $10.99 <button type="button">add to order</button></p>
-          <p>Chicken Parmesan - $10.99 <button type="button">add to order</button></p>
-          <p>Steak & Cheese - $10.99 <button type="button">add to order</button></p>
-          <p>Caprese - $10.99 <button type="button">add to order</button></p>
-          <p>Meatball Parmesan - $10.99 <button type="button">add to order</button></p>
-          <p>Italian Combo - $10.99 <button type="button">add to order</button></p>
-          <p>Ham with Cheese - $10.99 <button type="button">add to order</button></p>
-          <p>Salami with Cheese - $10.99 <button type="button">add to order</button></p>
-          <p>Sausage Peppers & Onions - $10.99 <button type="button">add to order</button></p>
-          <p>Veal Parmesan Sub - $11.99 <button type="button">add to order</button></p>
+          <p>Eggplant Parmesan - $10.99 <button type="button" onclick="addToOrder('Eggplant Parmesan', 10.99)">add to order</button></p>
+          <p>Chicken Parmesan - $10.99 <button type="button" onclick="addToOrder('Chicken Parmesan', 10.99)">add to order</button></p>
+          <p>Steak & Cheese - $10.99 <button type="button" onclick="addToOrder('Steak & Cheese', 10.99)">add to order</button></p>
+          <p>Caprese - $10.99 <button type="button" onclick="addToOrder('Caprese', 10.99)">add to order</button></p>
+          <p>Meatball Parmesan - $10.99 <button type="button" onclick="addToOrder('Meatball Parmesan', 10.99)">add to order</button></p>
+          <p>Italian Combo - $10.99 <button type="button" onclick="addToOrder('Italian Combo', 10.99)">add to order</button></p>
+          <p>Ham with Cheese - $10.99 <button type="button" onclick="addToOrder('Ham with Cheese', 10.99)">add to order</button></p>
+          <p>Salami with Cheese - $10.99 <button type="button" onclick="addToOrder('Salami with Cheese', 10.99)">add to order</button></p>
+          <p>Sausage Peppers & Onions - $10.99 <button type="button" onclick="addToOrder('Sausage Peppers & Onions', 10.99)">add to order</button></p>
+          <p>Veal Parmesan Sub - $11.99 <button type="button" onclick="addToOrder('Veal Parmesan Sub', 11.99)">add to order</button></p>
         </div>
       </div>
       <div class="col-4 px-2 d-flex flex-column ">
@@ -85,35 +85,35 @@
                 
                 <label class="mx-1">
                     Hot
-                    <input type="radio" id="hot" name="flavor">
+                    <input type="radio" id="hot" name="flavor" value="Hot">
                 </label>
     
                 <label class="mx-1">
                     Mild
-                    <input type="radio" id="mild" name="flavor">
+                    <input type="radio" id="mild" name="flavor" value="Mild">
                 </label>
     
                 <label class="mx-1">
                     Garlic
-                    <input type="radio" id="garlic" name="flavor">
+                    <input type="radio" id="garlic" name="flavor" value="Garlic">
                 </label>
     
                 <label class="mx-1">
                     Honey BBQ
-                    <input type="radio" id="honey_bbq" name="flavor">
+                    <input type="radio" id="honey_bbq" name="flavor" value="Honey BBQ">
                 </label>
     
                 <label class="mx-1">
                     Teriyaki
-                    <input type="radio" id="teriyaki" name="flavor">
+                    <input type="radio" id="teriyaki" name="flavor" value="Teriyaki">
                 </label>
             </fieldset>
         </form>
       <div class="mx-auto">
-        <p>10 Wings - $9.99 <button onclick="clearRadioForm('sauce_flavor')">Add to Order</button></p>
-        <p>20 Wings - $17.99 <button onclick="clearRadioForm('sauce_flavor')">Add to Order</button></p>
-        <p>30 Wings - $25.99 <button onclick="clearRadioForm('sauce_flavor')">Add to Order</button></p>
-        <p>40 Wings - $31.99 <button onclick="clearRadioForm('sauce_flavor')">Add to Order</button></p>
+        <p>10 Wings - $9.99 <button onclick="addWingsToOrder(10, 'sauce_flavor', 9.99);">Add to Order</button></p>
+        <p>20 Wings - $17.99 <button onclick="addWingsToOrder(20, 'sauce_flavor', 17.99);">Add to Order</button></p>
+        <p>30 Wings - $25.99 <button onclick="addWingsToOrder(30, 'sauce_flavor', 25.99);">Add to Order</button></p>
+        <p>40 Wings - $31.99 <button onclick="addWingsToOrder(40, 'sauce_flavor', 31.99);">Add to Order</button></p>
       </div>
     </div>
 
@@ -123,149 +123,149 @@
           <div class="mx-auto">
             <form id="pizza_size">
               <fieldset>
-                  <legend>Pizza Size</legend>
-          
-                  <label>
-                      <input type="radio" id="slice" name="size" value="slice">
-                      Slice - $2.25
-                  </label>
-          
-                  <label>
-                      <input type="radio" id="medium" name="size" value="medium">
-                      Medium (16") - $11.99
-                  </label>
-          
-                  <label>
-                      <input type="radio" id="large" name="size" value="large">
-                      Large (18") - $13.99
-                  </label>
-          
-                  <label>
-                      <input type="radio" id="sicilian" name="size" value="sicilian">
-                      Sicilian (Square) - $15.99
-                  </label>
-          
-                  <label>
-                      <input type="radio" id="sheet" name="size" value="sheet">
-                      Sheet (24 Slices) - $22.99
-                  </label>
+                <legend>Pizza Size</legend>
+                <label>
+                    <input type="radio" id="slice" name="size" value="Slice">
+                    Slice - $2.25
+                </label>
+        
+                <label>
+                    <input type="radio" id="medium" name="size" value="Medium">
+                    Medium (16") - $11.99
+                </label>
+        
+                <label>
+                    <input type="radio" id="large" name="size" value="Large">
+                    Large (18") - $13.99
+                </label>
+        
+                <label>
+                    <input type="radio" id="sicilian" name="size" value="Sicilian">
+                    Sicilian (Square) - $15.99
+                </label>
+        
+                <label>
+                    <input type="radio" id="sheet" name="size" value="Sheet">
+                    Sheet (24 Slices) - $22.99
+                </label>
               </fieldset>
           </form>
-        <form id="toppings" >
+        <form id="toppings">
           <fieldset>
             <legend class="text-center">Toppings</legend>
             <p class="text-center">Price per topping: Sheet - $2.00, Whole Pizza - $1.75, Slice - $0.50</p>
             
             <div class="mx-auto">
-                <label>
-                    <input type="checkbox" id="extra_cheese" name="topping" value="extra_cheese">
-                    Extra Cheese
-                </label>
+              <label>
+                  <input type="checkbox" id="extra_cheese" name="topping" value="Extra Cheese">
+                  Extra Cheese
+              </label>
     
-                <label>
-                    <input type="checkbox" id="meatballs" name="topping" value="meatballs">
-                    Meatballs
-                </label>
+              <label>
+                  <input type="checkbox" id="meatballs" name="topping" value="Meatballs">
+                  Meatballs
+              </label>
     
-                <label>
-                    <input type="checkbox" id="tomatoes" name="topping" value="tomatoes">
-                    Tomatoes
-                </label>
+              <label>
+                  <input type="checkbox" id="tomatoes" name="topping" value="Tomatoes">
+                  Tomatoes
+              </label>
                             
-                <label>
-                  <input type="checkbox" id="sausage" name="topping" value="sausage">
-                  Sausage
-                </label>
+              <label>
+                <input type="checkbox" id="sausage" name="topping" value="Sausage">
+                Sausage
+              </label>
 
-                <label>
-                  <input type="checkbox" id="hot_cherry_peppers" name="topping" value="hot_cherry_peppers">
-                  Hot Cherry Peppers
-                </label>
+              <label>
+                <input type="checkbox" id="hot_cherry_peppers" name="topping" value="Hot Cherry Peppers">
+                Hot Cherry Peppers
+              </label>
 
-                <label>
-                  <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
-                  Mushrooms
-                </label>
+              <label>
+                <input type="checkbox" id="mushrooms" name="topping" value="Mushrooms">
+                Mushrooms
+              </label>
 
-                <label>
-                  <input type="checkbox" id="artichokes" name="topping" value="artichokes">
-                  Artichokes
-                </label>
+              <label>
+                <input type="checkbox" id="artichokes" name="topping" value="Artichokes">
+                Artichokes
+              </label>
 
-                <label>
-                  <input type="checkbox" id="onions" name="topping" value="onions">
-                  Onions
-                </label>
+              <label>
+                <input type="checkbox" id="onions" name="topping" value="Onions">
+                Onions
+              </label>
 
-                <label>
-                  <input type="checkbox" id="black_olives" name="topping" value="black_olives">
-                  Black Olives
-                </label>
+              <label>
+                <input type="checkbox" id="black_olives" name="topping" value="Black Olives">
+                Black Olives
+              </label>
 
-                <label>
-                  <input type="checkbox" id="green_peppers" name="topping" value="green_peppers">
-                  Green Peppers
-                </label>
+              <label>
+                <input type="checkbox" id="green_peppers" name="topping" value="Green Peppers">
+                Green Peppers
+              </label>
 
-                <label>
-                  <input type="checkbox" id="ricotta_cheese" name="topping" value="ricotta_cheese">
-                  Ricotta Cheese
-                </label>
+              <label>
+                <input type="checkbox" id="ricotta_cheese" name="topping" value="Ricotta Cheese">
+                Ricotta Cheese
+              </label>
 
-                <label>
-                  <input type="checkbox" id="salami" name="topping" value="salami">
-                  Salami
-                </label>
+              <label>
+                <input type="checkbox" id="salami" name="topping" value="Salami">
+                Salami
+              </label>
 
-                <label>
-                  <input type="checkbox" id="ham" name="topping" value="ham">
-                  Ham
-                </label>
+              <label>
+                <input type="checkbox" id="ham" name="topping" value="Ham">
+                Ham
+              </label>
 
-                <label>
-                  <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
-                  Pepperoni
-                </label>
+              <label>
+                <input type="checkbox" id="pepperoni" name="topping" value="Pepperoni">
+                Pepperoni
+              </label>
 
-                <label>
-                  <input type="checkbox" id="chicken" name="topping" value="chicken">
-                  Chicken
-                </label>
+              <label>
+                <input type="checkbox" id="chicken" name="topping" value="Chicken">
+                Chicken
+              </label>
 
-                <label>
-                  <input type="checkbox" id="bacon" name="topping" value="bacon">
-                  Bacon
-                </label>
+              <label>
+                <input type="checkbox" id="bacon" name="topping" value="Bacon">
+                Bacon
+              </label>
 
-                <label>
-                  <input type="checkbox" id="peppercini" name="topping" value="peppercini">
-                  Peppercini
-                </label>
+              <label>
+                <input type="checkbox" id="peppercini" name="topping" value="Peppercini">
+                Peppercini
+              </label>
 
-                <label>
-                  <input type="checkbox" id="pineapple" name="topping" value="pineapple">
-                  Pineapple
-                </label>
+              <label>
+                <input type="checkbox" id="pineapple" name="topping" value="Pineapple">
+                Pineapple
+              </label>
 
-                <label>
-                  <input type="checkbox" id="anchovies" name="topping" value="anchovies">
-                  Anchovies
-                </label>
+              <label>
+                <input type="checkbox" id="anchovies" name="topping" value="Anchovies">
+                Anchovies
+              </label>
 
-                <label>
-                  <input type="checkbox" id="spinach" name="topping" value="spinach">
-                  Spinach
-                </label>
+              <label>
+                <input type="checkbox" id="spinach" name="topping" value="Spinach">
+                Spinach
+              </label>
 
-                <label>
-                  <input type="checkbox" id="roasted_red_peppers" name="topping" value="roasted_red_peppers">
-                  Roasted Red Peppers
-                </label>
-          </div>
+              <label>
+                <input type="checkbox" id="roasted_red_peppers" name="topping" value="Roasted Red Peppers">
+                Roasted Red Peppers
+              </label>
+            </div>
+          </fieldset>
         </form>
       </div>
     </div>
-    <button onclick="orderPizza('pizza_size', 'toppings')">Add pizza to order</button>
+    <button onclick="orderPizza('size', 'topping'); updateOrder(orderDisplay); updatePrice(priceDisplay);">Add pizza to order</button>
     </div>
     <div class="col-4 d-flex flex-column text-center">
       <h5 class="text-center">Specialty Pizza</h5>
@@ -276,9 +276,8 @@
           <label>Large - $15.99 <input type="radio" id="white_large" name="white_pizza_size" value="white_large"/></label>
         </form>
         <button onclick="clearRadioForm('white_pizza')"\>Add to order</button>
-        <p>Margarita Pizza</p>
-        <form id="margarita_pizza">
-          <p class="my-0">White pizza</p>
+        <form id="margarita_pizza" class="mt-3">
+          <p class="my-0">Margarita Pizza</p>
           <label>Medium - $13.99 <input type="radio" id="margarita_medium" name="margarita_pizza" value="margarita_medium"/></label>
           <label>Large - $15.99 <input type="radio" id="margarita_large" name="margarita_pizza" value="margarita_large"/></label>
         </form>
@@ -349,8 +348,8 @@
         <p>Pasta Angelo - $13.99 <button type="button">add to order</button></p>
         <p>Meat Sauce - $14.99 <button type="button">add to order</button></p>
         <p>Garlic & Oil - $12.99 <button type="button">add to order</button></p>
-        <p>Broccoli Rabe -  $16.99<button type="button">add to order</button></p>
-        <form><label> Add prosciutto & peas <input type="checkbox"> $4.00</label></form>
+        <p class="mb-0">Broccoli Rabe -  $16.99<button type="button">add to order</button></p>
+        <form class="mb-2"><label> Add prosciutto & peas <input type="checkbox"> $4.00</label></form>
         <p>Alfredo -  $15.99<button type="button">add to order</button></p>
         <p>Ala Vodka -  $15.99<button type="button">add to order</button></p>
         <p>Linguine Carbonara -  $11.99, large $16.99<button type="button">add to order</button></p>
@@ -370,8 +369,14 @@
   </div>
 
   <!--ADD A ORDER TAB THAT HAS THE CURRENT ORDER AND PRICE-->
-
-
+    <div class="col-12 d-flex flex-column text-center">
+      <div class="mx-auto">
+        <h5>Order:</h5>
+        <p id="orderDisplay"></p>
+        <h5>Price:</h5>
+        <p id="priceDisplay"></p>
+      </div>
+    </div>
   </div>
 
     
