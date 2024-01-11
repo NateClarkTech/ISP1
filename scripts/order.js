@@ -102,15 +102,16 @@ function orderSpecialtyPizza(radioName, priceOfProduct){
 
     for (var i = 0; i < elements.length; i++){
         if (elements[i].checked){
-            selectedRadioElement = elements[i].checked;
+            selectedRadioElement = elements[i];
         }
     }
+    console.log(selectedRadioElement)
     if (selectedRadioElement.id === 'white_medium' || selectedRadioElement.id === 'margarita_medium'){
-        addToTotal(elements[i].value + " Pizza", 13.99);
+        addToTotal(selectedRadioElement.value + " Pizza", 13.99);
         return;
     }
-    if (selectedRadioElement.id){
-        addToTotal(elements[i].value + " Pizza", 15.99);
+    if (selectedRadioElement.id === 'white_large' || selectedRadioElement.id === 'margarita_large'){
+        addToTotal(selectedRadioElement.value + " Pizza", 15.99);
         return;
     }
     console.log("ERROR")
@@ -148,8 +149,6 @@ function addWingsToOrder(number, formName, price){
     var selectedFlavor = getSelectedRadioElement(formName)
     if (selectedFlavor){
         addToTotal(number + " " + selectedFlavor  + ' Wings', price)
-        updateOrder(orderDisplay);
-        updatePrice(priceDisplay);
     }
 }
 
